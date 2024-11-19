@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else if (projectName === "MyGarage") {
         message = "MyGarage is an app I created to simulate a vehicle storage system. It uses Python and Tkinter to create a simple interface where users can register and view vehicle details. For more information, check the repository.";
       } else if (projectName === "Awax Project") {
-        message = "Awax Project is a website template related to design services. with the integration of front-end technologies. For more information, check the repository.";
+        message = "Awax Project is a website template related to design services with the integration of front-end technologies. For more information, check the repository.";
       } else if (projectName === "Medicenter") {
         message = "Medicenter is a website template developed as part of the HTML5 and CSS3 course from B7Web. This project serves as practice to solidify foundational skills in web page structuring and styling, especially for healthcare-related websites.For more information, check the repository.";
       } else if (projectName === "Back-End Dev Imersion: Alura") {
