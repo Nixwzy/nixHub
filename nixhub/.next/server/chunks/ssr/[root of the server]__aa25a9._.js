@@ -66,30 +66,26 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$u
 ;
 ;
 ;
-const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cva"])("inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-slate-950 disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg]:size-4 [&_svg]:shrink-0 dark:focus-visible:ring-slate-300", {
+const buttonVariants = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$class$2d$variance$2d$authority$2f$dist$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cva"])('inline-flex items-center justify-center whitespace-nowrap rounded-full text-base font-semibold ring-offset-white transition-colors', {
     variants: {
         variant: {
-            default: "bg-slate-900 text-slate-50 shadow hover:bg-slate-900/90 dark:bg-slate-50 dark:text-slate-900 dark:hover:bg-slate-50/90",
-            destructive: "bg-red-500 text-slate-50 shadow-sm hover:bg-red-500/90 dark:bg-red-900 dark:text-slate-50 dark:hover:bg-red-900/90",
-            outline: "border border-slate-200 bg-white shadow-sm hover:bg-slate-100 hover:text-slate-900 dark:border-slate-800 dark:bg-slate-950 dark:hover:bg-slate-800 dark:hover:text-slate-50",
-            secondary: "bg-slate-100 text-slate-900 shadow-sm hover:bg-slate-100/80 dark:bg-slate-800 dark:text-slate-50 dark:hover:bg-slate-800/80",
-            ghost: "hover:bg-slate-100 hover:text-slate-900 dark:hover:bg-slate-800 dark:hover:text-slate-50",
-            link: "text-slate-900 underline-offset-4 hover:underline dark:text-slate-50"
+            default: 'bg-accent text-primary hover:bg-accent-hover',
+            primary: 'bg-primary text-white',
+            outline: 'border border-accent bg-transparent text-accent hover:bg-accent hover:text-primary'
         },
         size: {
-            default: "h-9 px-4 py-2",
-            sm: "h-8 rounded-md px-3 text-xs",
-            lg: "h-10 rounded-md px-8",
-            icon: "h-9 w-9"
+            default: 'h-[44px] px-6',
+            md: 'h-[48px] px-6',
+            lg: 'h-[56px] px-8 text-sm uppercase tracking-[2px]'
         }
     },
     defaultVariants: {
-        variant: "default",
-        size: "default"
+        variant: 'default',
+        size: 'default'
     }
 });
 const Button = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__.forwardRef(({ className, variant, size, asChild = false, ...props }, ref)=>{
-    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Slot"] : "button";
+    const Comp = asChild ? __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f40$radix$2d$ui$2f$react$2d$slot$2f$dist$2f$index$2e$mjs__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Slot"] : 'button';
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(Comp, {
         className: (0, __TURBOPACK__imported__module__$5b$project$5d2f$lib$2f$utils$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["cn"])(buttonVariants({
             variant,
@@ -100,11 +96,11 @@ const Button = /*#__PURE__*/ __TURBOPACK__imported__module__$5b$project$5d2f$nod
         ...props
     }, void 0, false, {
         fileName: "[project]/components/ui/button.tsx",
-        lineNumber: 47,
+        lineNumber: 40,
         columnNumber: 7
     }, this);
 });
-Button.displayName = "Button";
+Button.displayName = 'Button';
 ;
 }}),
 "[project]/components/Nav.jsx (client proxy) <module evaluation>": ((__turbopack_context__) => {

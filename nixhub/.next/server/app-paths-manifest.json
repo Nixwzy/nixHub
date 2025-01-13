@@ -1,6 +1,9 @@
 {
-  "/resume/page": "app/resume/page.js",
   "/page": "app/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/services/page": "app/services/page.js",
+  "/resume/page": "app/resume/page.js",
+  "/work/page": "app/work/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/services/page": "app/services/page.js"
+  "/_not-found/page": "app/_not-found/page.js"
 }
