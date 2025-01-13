@@ -13,19 +13,18 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl: pt-8 xl:pb-24">
           {/* texto */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Desenvolvedor de Software</span>
             <h1 className="h1 mb-6">
-              Hello I&apos;m <br />
+              Olá! Sou<br />
               <span className='text-accent'>Guilherme Lopes</span>
             </h1>
             <p className='max-w-[500px] mb-9 text-white/80'>
-              texto chamativo profissional texto chamativo profissional texto
-              chamativo profissional
+            Transformo desafios em soluções inteligentes com paixão por tecnologia e inovação. Como estudante de Engenharia de Software, busco constantemente crescer e contribuir com projetos que impactem positivamente pessoas e negócios. Vamos criar algo extraordinário juntos?
             </p>
             {/* social */}
             <div className='flex flex-col xl:flex-row items-center gap-8'>
               <Button variant='outline' size='lg' className='uppercase flex items-center gap-2'>
-                <span>Download CV</span>
+                <span>Baixar Currículo</span>
                 <FiDownload className='text-xl'/>
               </Button>
               <div className='mb-8 xl:mb-0'>
