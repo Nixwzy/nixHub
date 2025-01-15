@@ -1,6 +1,8 @@
 'use client';
 
 import { Description } from '@radix-ui/react-dialog';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button'
 
 import {
   FaHtml5,
@@ -10,10 +12,15 @@ import {
   FaPython,
   FaNodeJs,
   FaPhp,
-  
 } from 'react-icons/fa';
 
-import { SiTailwindcss, SiNextdotjs, SiTypescript, SiMysql, SiPostgresql } from 'react-icons/si';
+import {
+  SiTailwindcss,
+  SiNextdotjs,
+  SiTypescript,
+  SiMysql,
+  SiPostgresql,
+} from 'react-icons/si';
 
 const about = {
   title: 'Sobre mim',
@@ -44,11 +51,34 @@ const about = {
 };
 
 const experience = {
-  // icon: 'procurar badge.svg',
-  title: 'Experiência Profissional',
-  description:
-   'Atualmente, estou em busca de uma oportunidade de estágio na área de Engenharia de Software, onde possa aplicar os conhecimentos adquiridos durante minha formação acadêmica e desenvolver habilidades práticas. Com uma base sólida em programação, desenvolvimento web e lógica computacional, estou preparado para contribuir com equipes dinâmicas e participar de projetos desafiadores. Acredito que a combinação do meu aprendizado teórico e minha vontade de aprender com a prática me torna um bom candidato para atuar em projetos inovadores e de impacto. Meu objetivo é evoluir constantemente, absorver novas tecnologias e processos, além de fortalecer minha capacidade de trabalhar em equipe e me adaptar a diferentes contextos e desafios do mercado de trabalho.',
+  // icon: 'badge.svg',
+  title: 'Certificados de Conclusão',
+  description: 'Reconhecimentos obtidos ao finalizar módulos específicos do curso Fullstack da B7Web.',
+  items: [
+    {
+      href: 'https://alunos.b7web.com.br/media/certificates/certificado_3251624.jpg',
+      title: 'Estruturação HTML5 e Estilização com CSS3',
+      name: 'HTML5 e CSS3',
+    },
+    {
+      href: 'https://alunos.b7web.com.br/media/certificates/certificado_6702318.jpg',
+      title: 'Desenvolvimento Dinâmico com JavaScript',
+      name: 'JavaScript',
+    },
+    {
+      href: 'https://alunos.b7web.com.br/media/certificates/certificado_3847049.jpg',
+      title: 'Programação Tipada com TypeScript',
+      name: 'TypeScript',
+    },
+    {
+      href: 'https://alunos.b7web.com.br/media/certificates/certificado_1262095.jpg',
+      title: 'Estilos Modernos e Eficientes com TailwindCSS',
+      name: 'TailwindCSS',
+    },
+  ],
 };
+
+
 
 const education = {
   // icon: 'procurar badge.svg',
@@ -122,7 +152,6 @@ const skills = {
       icon: <SiPostgresql />,
       name: 'postgreSQL',
     },
-
   ],
 };
 
@@ -155,13 +184,13 @@ const Resume = () => {
         >
           <TabsList className="flex flex-col w-full max-w-[380px] mx-auto xl:mx-0 gap-6">
             <TabsTrigger value="education">Acadêmico</TabsTrigger>
-            <TabsTrigger value="experience">Experiência</TabsTrigger>
+            <TabsTrigger value="experience">Certificados</TabsTrigger>
             <TabsTrigger value="skills">Habilidades</TabsTrigger>
             <TabsTrigger value="about">Sobre mim</TabsTrigger>
           </TabsList>
 
           <div className="min-h-[70vh] w-full">
-            {/* Experiencia proffisionalsisdlsaaaaaaa naoaguento mais */}
+            {/* certificados */}
 
             <TabsContent value="experience" className="w-full">
               <div className="flex flex-col gap-[30px] text-center xl:text-left">
@@ -170,27 +199,34 @@ const Resume = () => {
                   {experience.description}
                 </p>
 
-                {/* <ScrollArea className="h-[400px]">
+                <ScrollArea className="h-[400px]">
                   <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                     {experience.items.map((item, index) => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-1"
                         >
-                          <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl max-w-[260px] min-h-[60px] text-center lg:text-left">
-                            {item.position}
-                          </h3>
-                          <div className="flex items-center gap-3">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
+                          <span className="text-accent text-lg font-bold">{item.name}</span>
+                          <p className="text-md max-w-[260px] min-h-[60px] text-center text-white/60">
+                            {item.title}
+                          </p>
+                          <div className="flex items-center gap-3 mt-3">
+                            <Link
+                              href={item.href}
+                              className="text-center border-accent hover:text-accent transition-all"
+                            >
+                              <Button variant='outline' size='lg' className='uppercase flex items-center gap-2'>
+                                Visualizar
+                                </Button>
+                              
+                            </Link>
                           </div>
                         </li>
                       );
                     })}
                   </ul>
-                </ScrollArea> */}
+                </ScrollArea>
               </div>
             </TabsContent>
 
@@ -249,7 +285,7 @@ const Resume = () => {
                               </div>
                             </TooltipTrigger>
                             <TooltipContent>
-                              <p className='capitalize'>{skill.name}</p>
+                              <p className="capitalize">{skill.name}</p>
                             </TooltipContent>
                           </Tooltip>
                         </TooltipProvider>
@@ -262,19 +298,28 @@ const Resume = () => {
 
             {/* sobre mim */}
 
-            <TabsContent value="about" className="w-full text-center xl:text-left">
-              <div className='flex flex-col gap-[30px]'>
-                <h3 className='text-4xl font-bold'>{about.title}</h3>
-                <p className='max-w-[600px] text-white/60 mx-auto xl:mx-0'>{about.description}</p>
-                <ul className='grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0'>
-                  {about.info.map((item,index) => {
-                    return <li key={index} className='flex items-center justify-center xl:justify-start gap-4'>
-                      <span className='text-white/60'>{item.fieldName}</span>
-                      <span className='text-xl'>{item.fieldValue}</span>
-                    </li>
+            <TabsContent
+              value="about"
+              className="w-full text-center xl:text-left"
+            >
+              <div className="flex flex-col gap-[30px]">
+                <h3 className="text-4xl font-bold">{about.title}</h3>
+                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
+                  {about.description}
+                </p>
+                <ul className="grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[620px] mx-auto xl:mx-0">
+                  {about.info.map((item, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex items-center justify-center xl:justify-start gap-4"
+                      >
+                        <span className="text-white/60">{item.fieldName}</span>
+                        <span className="text-xl">{item.fieldValue}</span>
+                      </li>
+                    );
                   })}
                 </ul>
-
               </div>
             </TabsContent>
           </div>
