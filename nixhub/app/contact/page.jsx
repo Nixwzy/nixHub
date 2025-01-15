@@ -88,7 +88,7 @@ const Contact = () => {
 
               <Textarea
                 className="h-[200px]"
-                placeholder="Type your Message Here!"
+                placeholder="Digite sua mensagem"
               />
               <Button size="md" className="max-w-40">
                 Enviar Mensagem
