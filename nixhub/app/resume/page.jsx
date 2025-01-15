@@ -54,7 +54,7 @@ const experience = {
   // icon: 'badge.svg',
   title: 'Certificados de Conclusão',
   description:
-    'Reconhecimentos obtidos ao finalizar módulos específicos do curso Fullstack da B7Web.',
+    'Reconhecimentos obtidos ao finalizar cursos.',
   items: [
     {
       href: 'https://alunos.b7web.com.br/media/certificates/certificado_3251624.jpg',
