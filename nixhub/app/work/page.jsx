@@ -19,50 +19,40 @@ import WorkSliderBtns from '@/components/WorkSliderBtns';
 const projects = [
   {
     num: '01',
-    category: 'projeto nome',
-    title: 'project 1',
-    description: 'descricao projeto uhul',
-    stack: [
-      { name: 'Html 5' },
-      { name: 'CSS 3' },
-      { name: 'JAVASCRIPT' },
-      { name: 'CSS 3' },
-    ],
-    image: '/',
-    live: '',
-    github: '',
+    category: 'Sistema simples de Carrinho',
+    title: 'Projeto JS',
+    description: 'Este projeto é um sistema simples de carrinho de compras utilizando JavaScript. Ele permite adicionar itens ao carrinho, visualizar o total de compras e realizar a remoção de itens. O foco do projeto é praticar o uso de arrays e manipulação de DOM.',
+    stack: [{ name: 'JavaScript' }],
+    image: '/assets/work/cart.png',
+    github: 'https://github.com/Nixwzy/pizzacartsysJS',
+    live: 'https://pizzacartsys-js.vercel.app',
+    
   },
   {
     num: '02',
-    category: 'projeto nome',
-    title: 'project 1',
-    description: 'descricao projeto uhul',
-    stack: [
-      { name: 'Html 5' },
-      { name: 'CSS 3' },
-      { name: 'JAVASCRIPT' },
-      { name: 'CSS 3' },
-    ],
-    image: '/',
-    live: '',
-    github: '',
+    category: 'API/Requisição HTTP',
+    title: 'Projeto API',
+    description: 'Neste projeto, é realizada a criação de uma API simples utilizando JavaScript e a realização de requisições HTTP para interagir com a API. O objetivo é entender como enviar e receber dados de um servidor, além de manipular dados JSON.',
+    stack: [{ name: 'JavaScript' }],
+    image: '/assets/work/jsapih.png',
+    live: 'https://js-on-api-interactions.vercel.app',
+    github: 'https://github.com/Nixwzy/JavaScript-API-Interaction',
   },
   {
     num: '03',
-    category: 'projeto nome',
-    title: 'project 1',
-    description: 'descricao projeto uhul',
+    category: 'B7Burguer',
+    title: 'Projeto Design',
+    description: 'O projeto "B7Burguer" é um site responsivo de uma lanchonete fictícia, com o objetivo de praticar o uso de HTML5 e CSS3. O site apresenta um design limpo e moderno, com cardápios, opções de pedido e uma interface amigável para o usuário.',
     stack: [
       { name: 'Html 5' },
       { name: 'CSS 3' },
-      { name: 'JAVASCRIPT' },
-      { name: 'CSS 3' },
     ],
-    image: '/',
-    live: '',
-    github: '',
+    image: '/assets/work/b7burger.png',
+    live: 'https://b7burguer-nixwzy.vercel.app',
+    github: 'https://github.com/Nixwzy/B7Burguer',
   },
 ];
+
 
 const Work = () => {
   const [project, setProject] = useState(projects[0]);

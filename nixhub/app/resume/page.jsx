@@ -2,7 +2,7 @@
 
 import { Description } from '@radix-ui/react-dialog';
 import Link from 'next/link';
-import { Button } from '@/components/ui/button'
+import { Button } from '@/components/ui/button';
 
 import {
   FaHtml5,
@@ -53,7 +53,8 @@ const about = {
 const experience = {
   // icon: 'badge.svg',
   title: 'Certificados de Conclusão',
-  description: 'Reconhecimentos obtidos ao finalizar módulos específicos do curso Fullstack da B7Web.',
+  description:
+    'Reconhecimentos obtidos ao finalizar módulos específicos do curso Fullstack da B7Web.',
   items: [
     {
       href: 'https://alunos.b7web.com.br/media/certificates/certificado_3251624.jpg',
@@ -77,8 +78,6 @@ const experience = {
     },
   ],
 };
-
-
 
 const education = {
   // icon: 'procurar badge.svg',
@@ -207,7 +206,9 @@ const Resume = () => {
                           key={index}
                           className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-1"
                         >
-                          <span className="text-accent text-lg font-bold">{item.name}</span>
+                          <span className="text-accent text-lg font-bold">
+                            {item.name}
+                          </span>
                           <p className="text-md max-w-[260px] min-h-[60px] text-center text-white/60">
                             {item.title}
                           </p>
@@ -215,11 +216,16 @@ const Resume = () => {
                             <Link
                               href={item.href}
                               className="text-center border-accent hover:text-accent transition-all"
+                              target="_blank"
+                              rel="noopener noreferrer"
                             >
-                              <Button variant='outline' size='lg' className='uppercase flex items-center gap-2'>
+                              <Button
+                                variant="outline"
+                                size="lg"
+                                className="uppercase flex items-center gap-2"
+                              >
                                 Visualizar
-                                </Button>
-                              
+                              </Button>
                             </Link>
                           </div>
                         </li>
