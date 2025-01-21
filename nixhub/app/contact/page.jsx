@@ -66,6 +66,7 @@ const Contact = () => {
           form.current.reset();
         },
         (error) => {
+          console.error('Erro no EmailJS:', error);
           setFeedback('Erro ao enviar a mensagem. Tente novamente mais tarde.');
         }
       );
