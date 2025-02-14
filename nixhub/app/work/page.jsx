@@ -19,7 +19,7 @@ import WorkSliderBtns from '@/components/WorkSliderBtns';
 const projects = [
   {
     num: '01',
-    category: 'Sistema simples de Carrinho',
+    category: 'Sistema Simples de Carrinho',
     title: 'Projeto JS',
     description: 'Este projeto é um sistema simples de carrinho de compras utilizando JavaScript. Ele permite adicionar itens ao carrinho, visualizar o total de compras e realizar a remoção de itens. O foco do projeto é praticar o uso de arrays e manipulação de DOM.',
     stack: [{ name: 'JavaScript' }],
