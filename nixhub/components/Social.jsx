@@ -24,7 +24,7 @@ const ThreadsIcon = () => (
 const socials = [
   { icon: <FaGithub />, path: 'https://github.com/Nixwzy' },
   { icon: <FaLinkedinIn />, path: 'https://www.linkedin.com/in/glopesgl/' },
-  { icon: <FaInstagram />, path: 'https://www.instagram.com/jazzygui/' },
+  { icon: <FaInstagram />, path: '#' },
   { icon: <ThreadsIcon />, path: 'https://www.threads.net/@jazzygui' },
 ];
 
