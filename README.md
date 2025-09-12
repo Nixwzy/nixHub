@@ -1,3 +1,7 @@
+# ABANDONED
+This project will not receive any further updates or maintenance.
+
+---
 # NixHub 🌟
 
 ![NixHub Logo Placeholder](nixhub/public/assets/mockup-nixhub.png)
