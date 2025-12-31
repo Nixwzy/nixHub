@@ -56,25 +56,10 @@ const experience = {
   description:
     'Reconhecimentos obtidos ao finalizar cursos.',
   items: [
-    {
-      href: 'https://alunos.b7web.com.br/media/certificates/certificado_3251624.jpg',
-      title: 'Estruturação HTML5 e Estilização com CSS3',
-      name: 'HTML5 e CSS3',
-    },
-    {
-      href: 'https://alunos.b7web.com.br/media/certificates/certificado_6702318.jpg',
-      title: 'Desenvolvimento Dinâmico com JavaScript',
-      name: 'JavaScript',
-    },
-    {
-      href: 'https://alunos.b7web.com.br/media/certificates/certificado_3847049.jpg',
-      title: 'Programação Tipada com TypeScript',
-      name: 'TypeScript',
-    },
-    {
-      href: 'https://alunos.b7web.com.br/media/certificates/certificado_1262095.jpg',
-      title: 'Estilos Modernos e Eficientes com TailwindCSS',
-      name: 'TailwindCSS',
+    { 
+      href: '',
+      title: '',
+      name: '',
     },
   ],
 };
