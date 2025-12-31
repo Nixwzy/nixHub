@@ -51,6 +51,19 @@ const projects = [
     live: 'https://b7burguer-nixwzy.vercel.app',
     github: 'https://github.com/Nixwzy/B7Burguer',
   },
+  {
+    num: '04',
+    category: 'B7Burguer',
+    title: 'Projeto Design',
+    description: 'O projeto "B7Burguer" é um site responsivo de uma lanchonete fictícia, com o objetivo de praticar o uso de HTML5 e CSS3. O site apresenta um design limpo e moderno, com cardápios, opções de pedido e uma interface amigável para o usuário.',
+    stack: [
+      { name: 'Html 5' },
+      { name: 'CSS 3' },
+    ],
+    image: '/assets/work/b7burger.png',
+    live: 'https://b7burguer-nixwzy.vercel.app',
+    github: 'https://github.com/Nixwzy/B7Burguer',
+  },
 ];
 
 
