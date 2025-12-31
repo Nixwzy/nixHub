@@ -56,11 +56,117 @@ const experience = {
   description:
     'Reconhecimentos obtidos ao finalizar cursos.',
   items: [
-    { 
-      href: '',
-      title: '',
-      name: '',
-    },
+  {
+    href: 'https://app.b7web.com.br/certificates/03170bd0-0620-4456-828a-f2a32579dcb8',
+    name: 'Fundamentos de GIT',
+    title: 'Carga horária de 3 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/5984d1cf-e8f0-4d42-8dda-219170c9a424',
+    name: 'GitHub na prática',
+    title: 'Carga Horária de 5 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/a1b641a7-8081-4fcd-81c5-a0d42e7c2583',
+    name: 'Fundamentos em HTML/CSS ',
+    title: 'Carga horária de 12 horas',
+  },
+    {
+    href: 'https://app.b7web.com.br/certificates/3251624',
+    name: 'HTML5 e CSS3',
+    title: 'Carga horária de 92 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/f520dc3f-d004-43e6-80a6-28cf6d23eb3f',
+    name: 'HTML5 e CSS3 (2º Módulo)',
+    title: 'Carga Horária de 44 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/1ebdedd0-0dd9-4046-ad59-4a79f3d76b7b',
+    name: 'HTML e CSS Avançado',
+    title: 'Carga Horária de 24 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/1262095',
+    name: 'TailwindCSS',
+    title: 'Carga horária de 20 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/07aabc89-d5b9-4e10-9f94-3d89071d4b79',
+    name: 'TailwindCSS (2º Módulo)',
+    title: 'Carga horária de 8 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/bad3679b-d477-45c8-abf8-95e09f62285e',
+    name: 'TailwindCSS (3º Módulo)',
+    title: 'Carga horária de 3 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/241b5671-84d0-48d8-97ef-61992bbcb29f',
+    name: 'Fundamentos de Javascript',
+    title: 'Carga horária de 12 horas',
+  },
+    {
+    href: 'https://app.b7web.com.br/certificates/6702318',
+    name: 'Javascript',
+    title: 'Carga horária de 66 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/e157f99e-d233-4e22-ba9b-8a3d2bb2d078',
+    name: 'Javascript (2º Módulo)',
+    title: 'Carga Horária de 45 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/514ee409-4266-47aa-bc87-a3269e7a00c4',
+    name: 'Javascript Avançado',
+    title: 'Carga horária de 17 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/d0cf4eed-65a5-48a5-814c-48361c1267a2',
+    name: 'Typescript do Zero',
+    title: 'Carga horária de 5 horas',
+  },
+    {
+    href: 'https://app.b7web.com.br/certificates/3847049',
+    name: 'Typescript',
+    title: 'Carga horária de 20 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/f1a14b7f-2ec6-4ec8-9857-06bd7ecc603b',
+    name: 'Typescript (2º Módulo)',
+    title: 'Carga Horária de 5 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/45e646d7-3e72-4bb5-9b73-f3591a313b4b',
+    name: 'Fundamentos de ReactJS',
+    title: 'Carga horária de 12 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/99e64a9f-352d-414c-8c2e-c507f6aba0d2',
+    name: 'React Intermediário',
+    title: 'Carga horária de 12 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/6c2857d8-b060-478c-88d5-0989ddc303d3',
+    name: 'ReactHookForm e Zod',
+    title: 'Carga Horária de 5 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/4a08bf51-ca3d-443c-b7fa-e2e3c0ad17ba',
+    name: 'SQL do Zero',
+    title: 'Carga horária de 6 horas',
+  },
+   {
+    href: 'https://app.b7web.com.br/certificates/9375234',
+    name: 'Banco de Dados',
+    title: 'Carga horária de 20 horas',
+  },
+  {
+    href: 'https://app.b7web.com.br/certificates/4d8b450a-b9f8-42a1-8912-8a2da854a6d7',
+    name: 'Bancos de Dados 2',
+    title: 'Carga Horária de 6 horas',
+  },
+ 
   ],
 };
 
@@ -73,7 +179,7 @@ const education = {
     {
       institution: 'Universidade Estácio de Sá',
       degree: 'Engenharia de Software',
-      duration: '2024-2029 (Presente)',
+      duration: '2023-2027 (Presente)',
     },
     {
       institution: 'B7Web',
@@ -177,7 +283,7 @@ const Resume = () => {
             {/* certificados */}
 
             <TabsContent value="experience" className="w-full">
-              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+              <div className="flex flex-col gap-[30px] text-center">
                 <h3 className="text-4xl font-bold">{experience.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">
                   {experience.description}
